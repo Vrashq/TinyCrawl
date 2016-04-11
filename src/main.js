@@ -1,11 +1,10 @@
-import chaine from './hello'
+import Game from './tinyCrawl/core'
 
-let demo = document.querySelector('#demo')
-demo.innerHTML = chaine + ' !!!'
+let game = new Game('#game')
+console.log(game)
 
 if (module.hot) {
-  module.hot.accept('./hello', function () {
-    let n = require('./hello')
-    demo.innerHTML = n.default
+  module.hot.accept('./tinyCrawl/core', function () {
+    game = null
   })
 }

@@ -1,7 +1,12 @@
 {
   "name": "tinycrawl",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small pocket rpg",
+  "readme": "README.md",
+  "repository": {
+	"type": "github",
+	"url": "https://github.com/Vrashq/TinyCrawl.git"
+  },
   "main": "webpack.config.js",
   "scripts": {
     "build": "node build/build.js",
